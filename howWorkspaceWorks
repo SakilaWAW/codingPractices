@@ -1,0 +1,37 @@
+#Stage is like a buffer.By the call of "git add" It stores the temporary
+#files which will be updated to the branch that the HEAD points to.It 
+#will be clean when user call "git commit".
+
+step 1:
+-----workspace---       ----------------Repository-----------------------
+|   		|	|			  HEAD points to	|
+|   		|	|  ---stage----		 ---master branch--	|
+|  readme.md	|	|  |	      |		 |file1		  |	|
+|  license	|	|  | 	      |		 |file2		  |	|
+|     ...	|	|  | 	      |		 |...		  |	|
+|		|	|  |  	      |		 |		  |	|
+|		|	|  ------------ 	 ------------------	|
+-----------------       -------------------------------------------------
+
+step 2:
+-----workspace---       ----------------Repository-----------------------
+|   		|	|			  HEAD points to	|
+|   		|	|  ---stage----		 ---master branch--	|
+|  readme.md	|	|  | 	      |		 |file1		  |	|
+|  license	|git add|  |readme.md |		 |file2		  |	|
+|		|	|  |license   |		 |...		  |	|
+|		|	|  |  	      |		 |		  |	|
+|		|	|  ------------ 	 ------------------	|
+-----------------       -------------------------------------------------
+
+step 3:
+-----workspace---       ----------------Repository-----------------------
+|   		|	|			  HEAD points to	|
+|  file1 	|	|  ---stage----		 ---master branch--	|
+|  file2	|	|  | 	      |		 |file1		  |	|
+|  license	|	|  |	      |git commit|file2		  |	|
+|  readme.md	|	|  |	      |		 |readme.md	  |	|
+|		|	|  |  	      |		 |licese...	  |	|
+|		|	|  ------------ 	 ------------------	|
+-----------------       -------------------------------------------------
+
