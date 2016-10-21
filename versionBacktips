@@ -1,0 +1,18 @@
+#There is something tips in git version back.
+
+#When you want to reset the change you have down.
+#There are FOUR situations.
+#1.I didn't call "git add" yet.
+#In this situation,you can call "git checkout -- fileName" to reset the changes.
+
+#2.I have called "git add",but no "git commit" yet.
+#In this situation,you can call "git reset HEAD fileName" to reset the changes in stages.
+#Then you should repeat the situation 1 to reset the changes in you workspace.
+
+#3.Oh my god.I have called "git commit"!
+#Don't worry.As long as you didn't sync your local repository to the remote repository,
+#it will be OK.Just call git reset --hard HEAD^ will reset the changes in repository and in
+#your workspace.
+
+#4.Do I still have chance if I have sync the repository?
+#No,you have no chance.
