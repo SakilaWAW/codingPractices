@@ -11,8 +11,8 @@
 
 #3.Oh my god.I have called "git commit"!
 #Don't worry.As long as you didn't sync your local repository to the remote repository,
-#it will be OK.Just call git reset --hard HEAD^ will reset the changes in repository and in
-#your workspace.
+#it will be OK.Just call "git reset --hard HEAD^" will reset the changes in repository,
+#in your workspace and also in your stage.
 
 #4.Do I still have chance if I have sync the repository?
 #No,you have no chance.
